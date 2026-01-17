@@ -35,7 +35,7 @@ It supports server-side search, filtering, sorting, pagination, and basic analyt
 ## Environment Variable
 
 This project uses MongoDB Atlas Free Tier.
-MONGODB_URI= mongodb+srv://utsavsoni619:utsav619@cluster0.oklwfir.mongodb.net/lead-dashboard
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/lead-dashboard
 
 ---
 
