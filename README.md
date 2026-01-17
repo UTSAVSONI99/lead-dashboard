@@ -37,17 +37,13 @@ It supports server-side search, filtering, sorting, pagination, and basic analyt
 This project uses MongoDB Atlas Free Tier.
 MONGODB_URI= mongodb+srv://utsavsoni619:utsav619@cluster0.oklwfir.mongodb.net/lead-dashboard
 
-## 🔧 Setup Instructions
-
-### 1️⃣ Clone the repository
-
 ---
 
 ## Deployed URL
 
 URL= https://lead-dashboard-crm.vercel.app/
 
-
+---
 
 ## Seeding Method
 
@@ -74,7 +70,28 @@ npm run seed
 Email: utsav@test.com
 Password: utsav619
 
+---
+
+## Setup step
+
+1. **Clone the repository**
+
 ```bash
 git clone https://github.com/UTSAVSONI99/lead-dashboard.git
 cd lead-dashboard
 ```
+
+2. **Install Dependencies**
+
+   `npm install`
+
+3. ** env file**
+   Create .env file in the project root and add your MongoDB URI:
+
+   MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.oklwfir.mongodb.net/lead-dashboard
+
+4. **Seed the database**
+   `npm run seed`
+
+5. **_Run the project locally_**
+   `npm run dev`
