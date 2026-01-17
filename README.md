@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lead Management Dashboard
 
-## Getting Started
+A full-stack Lead Management Dashboard built using **Next.js, MongoDB, and Tailwind CSS**.  
+It supports server-side search, filtering, sorting, pagination, and basic analytics.
 
-First, run the development server:
+---
+
+## Tech Used
+
+- Next.js (App Router)
+- MongoDB Atlas (Mongoose)
+- Tailwind CSS + shadcn/ui
+- Vercel (Deployment)
+
+---
+
+## Features
+
+- Login (basic authentication)
+- Leads list with:
+  - Server-side search
+  - Status filtering
+  - Pagination
+- Lead details view
+- Analytics dashboard:
+  - Total leads
+  - Converted leads
+  - New leads
+  - Contacted leads
+  - Lost leads
+- Seeded with 1000 dummy leads
+
+---
+
+## Environment Variable
+
+This project uses MongoDB Atlas Free Tier.
+MONGODB_URI= mongodb+srv://utsavsoni619:utsav619@cluster0.oklwfir.mongodb.net/lead-dashboard
+
+## 🔧 Setup Instructions
+
+### 1️⃣ Clone the repository
+
+---
+
+## Deployed URL
+
+URL= https://lead-dashboard-crm.vercel.app/
+
+👉 That’s enough.  
+No secrets exposed, no extra explanation needed.
+
+---
+
+👉 That’s enough.  
+No secrets exposed, no extra explanation needed.
+
+---
+
+## Seeding Method
+
+The project includes a seed script to populate the database with dummy lead data.
+
+### Seed Data Includes:
+
+- 500+ leads
+- Name
+- Email
+- Phone number
+- Lead status (New, Contacted, Converted, Lost)
+
+### Run Seed Script Locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run seed
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Demo Credential
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Email: utsav@test.com
+Password: utsav619
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+git clone https://github.com/UTSAVSONI99/lead-dashboard.git
+cd lead-dashboard
+```

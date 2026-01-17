@@ -7,10 +7,10 @@ export default function LeadDetails() {
 
       <div className="bg-white p-4 rounded shadow space-y-2">
         <p>
-          <strong>Name:</strong> Rahul Sharma
+          <strong>Name:</strong> Aman soni
         </p>
         <p>
-          <strong>Email:</strong> rahul@test.com
+          <strong>Email:</strong> amanl@test.com
         </p>
         <p>
           <strong>Status:</strong> Converted

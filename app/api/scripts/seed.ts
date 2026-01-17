@@ -1,6 +1,7 @@
+import "dotenv/config";
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/mongodb";
-import Lead from "@/models/Lead";
+import { connectDB } from "../../../lib/mongodb";
+import Lead from "../../../models/Lead";
 
 //  Generate random status based on given distribution
 
@@ -19,6 +20,36 @@ function generatePhone(): string {
     number += Math.floor(Math.random() * 10);
   }
   return `+91 ${number}`;
+}
+
+async function seed() {
+  try {
+    await connectDB();
+
+    // Clear existing leads
+    await Lead.deleteMany();
+
+    const leads = [];
+
+    for (let i = 1; i <= 1000; i++) {
+      leads.push({
+        name: `Lead User ${i}`,
+        email: `lead${i}@example.com`,
+        phone: generatePhone(),
+        status: getRandomStatus(),
+      });
+    }
+
+    await Lead.insertMany(leads);
+
+    console.log({
+      success: true,
+      message: "Leads seeded successfully",
+      total: leads.length,
+    });
+  } catch (error) {
+    console.error("Seed error:", error);
+  }
 }
 
 export async function GET(req: Request) {
@@ -53,4 +84,9 @@ export async function GET(req: Request) {
       { status: 500 },
     );
   }
+}
+
+// Run seed if this file is executed directly
+if (import.meta.url === `file://${process.argv[1]}`) {
+  seed();
 }
