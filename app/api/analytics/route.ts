@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { connectDB } from "@/lib/mongodb";
 import Lead from "@/models/Lead";
 
-export async function GET() {
+export async function GET(req: Request) {
   await connectDB();
 
   // Count total leads

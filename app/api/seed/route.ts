@@ -21,7 +21,7 @@ function generatePhone(): string {
   return `+91 ${number}`;
 }
 
-export async function GET() {
+export async function GET(req: Request) {
   try {
     await connectDB();
 
