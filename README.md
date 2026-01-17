@@ -47,15 +47,7 @@ MONGODB_URI= mongodb+srv://utsavsoni619:utsav619@cluster0.oklwfir.mongodb.net/le
 
 URL= https://lead-dashboard-crm.vercel.app/
 
-👉 That’s enough.  
-No secrets exposed, no extra explanation needed.
 
----
-
-👉 That’s enough.  
-No secrets exposed, no extra explanation needed.
-
----
 
 ## Seeding Method
 
